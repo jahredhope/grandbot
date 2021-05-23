@@ -1,0 +1,37 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  labels:
+    cloud.googleapis.com/location: asia-east1
+  name: grandbot
+  namespace: "144909425694"
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: "2"
+    spec:
+      containerConcurrency: 80
+      containers:
+        - env:
+            - name: WEBHOOK_SECRET
+              value: e4bp8fpus34t8emf
+            - name: APP_ID
+              value: "116574"
+            - name: PRIVATE_KEY
+              valueFrom:
+                secretKeyRef:
+                  key: "latest"
+                  name: grandbot-codingbad-me-private-key
+          image: gcr.io/rampart-sh/grandbot:11
+          ports:
+            - containerPort: 8080
+              name: http1
+          resources:
+            limits:
+              cpu: 1000m
+              memory: 512Mi
+      timeoutSeconds: 300
+  traffic:
+    - latestRevision: true
+      percent: 100

@@ -1,0 +1,59 @@
+{
+  "action": "labeled",
+  "issue": {
+    "number": 23,
+    "title": "An example issue",
+    "user": {},
+    "labels": [
+      {
+        "name": "grandbot-automated",
+        "color": "422B1B",
+        "default": false,
+        "description": ""
+      },
+      {
+        "name": "not-planned",
+        "color": "D60205",
+        "default": false,
+        "description": "This issue may or may not be valid but is not currently planned to be actioned."
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2021-05-22T13:45:50Z",
+    "updated_at": "2021-05-23T02:06:23Z",
+    "closed_at": null,
+    "author_association": "OWNER",
+    "active_lock_reason": null,
+    "body": "",
+    "performed_via_github_app": null
+  },
+  "label": {
+    "url": "https://api.github.com/repos/test-user-name/test-repo-name/labels/not-planned",
+    "name": "not-planned",
+    "color": "D60205",
+    "default": false,
+    "description": "This issue may or may not be valid but is not currently planned to be actioned."
+  },
+  "repository": {
+    "name": "test-repo-name",
+    "full_name": "test-user-name/test-repo-name",
+    "private": true,
+    "owner": {
+      "login": "test-user-name",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13903378?v=4",
+      "gravatar_id": "",
+      "type": "User",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/test-user-name/test-repo-name",
+    "description": null,
+    "created_at": "2020-08-25T23:12:47Z",
+    "updated_at": "2020-08-25T23:14:30Z",
+    "pushed_at": "2020-08-28T01:18:22Z"
+  }
+}
