@@ -4,8 +4,8 @@
 
 This is the source code for [Grandbot](https://grandbot.codingbad.me).
 
-> A [GitHub App](https://docs.github.com/en/developers/apps/getting-started-with-apps/about-apps) that listens and responds to [Github Webhooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks).
 > Automates common issue communication, tracking and label creation.
+> A [GitHub App](https://docs.github.com/en/developers/apps/getting-started-with-apps/about-apps) that listens and responds to [Github Webhooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks).
 > Built with [Probot](https://github.com/probot/probot).
 
 ## Setup
