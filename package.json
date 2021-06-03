@@ -19,7 +19,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/picomatch": "^2.2.4",
     "dotenv": "^10.0.0",
+    "picomatch": "^2.3.0",
     "probot": "^11.0.1"
   },
   "devDependencies": {

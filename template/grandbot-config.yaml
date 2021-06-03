@@ -1,0 +1,11 @@
+admins:
+  - admin-team
+ownership:
+  - patterns:
+      - package-a
+    teams:
+      - team-a
+  - patterns:
+      - test-snapshots/**
+      - yarn.lock
+    sharedWithAll: true
